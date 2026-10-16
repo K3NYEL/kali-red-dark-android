@@ -22,13 +22,14 @@ A no-root Android personalization project inspired by the **Kali Red Dark** colo
 
 The source palette comes from the Kali Red Dark theme for Visual Studio Code. This repository is a separate Android-focused project and does not modify that original project.
 
-## Planned contents
+## Included documentation
 
-- Phone wallpapers in dark black and red
-- A consistent color palette in `theme/colors.json`
-- Icon-pack direction and launcher setup notes
-- Installation guide for Android 14
-- Preview images and device-specific notes
+- Color palette in `theme/colors.json`
+- Android 14 installation guide
+- Step-by-step [Lawnchair setup guide](docs/LAWNCHAIR-SETUP.md)
+- Roadmap for the wallpaper, icon options, and preview mockups
+
+Wallpaper artwork, a real icon pack, and preview images are still pending; placeholder folders are documented but do not contain installable assets yet.
 
 ## Android limitations
 
