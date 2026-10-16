@@ -8,7 +8,8 @@
 - [x] Add Android 14 installation notes
 - [ ] Create original home-screen wallpaper
 - [ ] Add visual preview mockups
-- [ ] Document icon-pack options after launcher compatibility is confirmed
+- [x] Add a practical Lawnchair setup guide for the target device
+- [ ] Document and test a specific compatible icon pack
 
 ## Later
 
