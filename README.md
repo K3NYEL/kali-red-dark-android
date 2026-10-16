@@ -1,44 +1,60 @@
 # Kali Red Dark for Android
 
-A no-root Android personalization project inspired by the **Kali Red Dark** color palette. The goal is to bring its dark surfaces, bright red accents, and readable contrast to compatible Android launchers and customization apps.
+A no-root Android personalization kit inspired by the **Kali Red Dark** palette from the [original VS Code theme](https://github.com/K3NYEL/kali-red-dark). This repository adapts the palette for Android launchers and customization apps; it is a separate project and does not modify the original VS Code theme.
 
-> **Device target:** Cubot KINGKONG ACE 2 running Android 14. Compatibility depends on the launcher and customization tools installed.
+> **Target device:** Cubot KINGKONG ACE 2 running Android 14  
+> **Current status:** Documentation and manual setup guide. A complete wallpaper, icon pack, preview images, and installable theme package are not available yet.
 
 ## Color palette
 
 | Role | Color | Hex |
 |---|---|---|
-| Accent / primary red | <span style="color:#ec0101">Red</span> | `#ec0101` |
-| Main background | Near-black | `#0b0b0d` |
-| Secondary background | Deep black | `#09090b` |
-| Main text | Soft white | `#e8e8e8` |
+| Original theme primary | Red | `#EC0101` |
+| Brighter mobile accent option | Pure red | `#FF0000` |
+| Main background | Near-black | `#0B0B0D` |
+| Secondary background | Deep black | `#09090B` |
+| Surface | Charcoal | `#1A1A1F` |
+| Main text | Soft white | `#E8E8E8` |
 | Muted text | Gray | `#777777` |
-| Strings / positive accent | Green | `#7ee787` |
-| Variables / links | Blue | `#79c0ff` |
-| Functions | Orange | `#ff9f43` |
-| Classes / types | Yellow | `#ffd166` |
-| Built-in support | Cyan | `#67e8f9` |
-| Constants | Purple | `#c084fc` |
+| Strings / positive accent | Green | `#7EE787` |
+| Variables / links | Blue | `#79C0FF` |
+| Functions | Orange | `#FF9F43` |
+| Classes / types | Yellow | `#FFD166` |
+| Built-in support | Cyan | `#67E8F9` |
+| Constants | Purple | `#C084FC` |
 
-The source palette comes from the Kali Red Dark theme for Visual Studio Code. This repository is a separate Android-focused project and does not modify that original project.
+The original red remains `#EC0101`. Use `#FF0000` only if a brighter red is preferred and the launcher accepts custom hexadecimal colors. The launcher accent may not recolor icons, widgets, or Android system surfaces.
 
-## Included documentation
+## Documentation
 
-- Color palette in `theme/colors.json`
-- Android 14 installation guide
-- Step-by-step [Lawnchair setup guide](docs/LAWNCHAIR-SETUP.md)
-- Roadmap for the wallpaper, icon options, and preview mockups
+- [Installation guide](docs/INSTALL.md)
+- [Lawnchair setup guide](docs/LAWNCHAIR-SETUP.md)
+- [Asset specifications and status](docs/ASSET-SPEC.md)
+- [Roadmap](docs/ROADMAP.md)
+- [Color token reference](theme/README.md)
+- [Contribution guide](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
 
-Wallpaper artwork, a real icon pack, and preview images are still pending; placeholder folders are documented but do not contain installable assets yet.
+## What is included today
 
-## Android limitations
+- Machine-readable color tokens in `theme/colors.json`
+- Android 14 installation notes
+- Manual Lawnchair configuration instructions
+- Documented requirements for future wallpaper, icons, and preview assets
 
-Without root or a compatible system theme engine, an ordinary theme cannot recolor every Android system surface. Quick Settings, notifications, Settings, and status-bar elements may keep the colors supplied by the device manufacturer. This project focuses on supported wallpaper, launcher, icon, widget, and color settings.
+## What is not included yet
 
-## Getting started
+- A finished Kali Red Dark wallpaper
+- A complete icon pack
+- Preview/mockup images
+- An installable APK, launcher theme package, or system-wide theme
 
-See [Installation guide](docs/INSTALL.md) and [project roadmap](docs/ROADMAP.md).
+Do not treat this repository as a ROM, firmware image, or Kali NetHunter installer. It only documents safe, reversible personalization settings. Android's Quick Settings, notifications, Settings app, and status bar may keep the colors supplied by the device manufacturer.
+
+## Device compatibility
+
+The documentation targets Lawnchair on a Cubot KINGKONG ACE 2 running Android 14, but exact menus and supported options depend on the installed Lawnchair version and device firmware. Steps that have not been verified on the exact device are identified as recommendations rather than guaranteed behavior.
 
 ## License
 
-This project is distributed under the MIT License. See [LICENSE](LICENSE).
+This repository is distributed under the MIT License. See [LICENSE](LICENSE).
