@@ -1,37 +1,45 @@
 # Installation guide
 
-This project is currently a **personalization kit**, not a flashable ROM or a system-wide Android theme APK. No root access is required.
+This repository is currently a **manual personalization kit**, not a flashable ROM, installable theme APK, or system-wide Android theme. No root access is required.
 
-## 1. Set the wallpaper
+## 1. Set a wallpaper
 
-When a wallpaper is added to `assets/wallpapers/`, download the full-resolution image to your phone, open it in Gallery/Photos, and choose **Set as wallpaper**. Select Home screen, Lock screen, or both.
+A finished project wallpaper has not been added yet. When a file is available in `assets/wallpapers/`:
 
-## 2. Apply a dark color scheme
+1. Download the image to the phone.
+2. Open it in Gallery or Photos.
+3. Choose **Set as wallpaper**.
+4. Select the home screen, lock screen, or both.
 
-On Android 14, open **Settings → Wallpaper & style** (the exact wording can vary by manufacturer). If available:
+Until then, use any dark wallpaper as a temporary placeholder.
 
-1. Enable the dark theme.
-2. Select a dark wallpaper.
-3. Review the suggested palette colors.
-4. Choose the red-accented palette if the system offers one.
+## 2. Enable dark mode
 
-Some manufacturers do not let users enter custom hexadecimal colors in the system palette.
+Open the phone's **Settings → Display** (menu names vary by manufacturer) and enable dark theme if available. Wallpaper controls may be under **Wallpaper**, **Home screen**, or **Display**; some Cubot firmware versions may not show a separate **Wallpaper & style** page.
+
+Android system color palettes are separate from Lawnchair's accent setting. Some firmware does not expose custom hexadecimal colors.
 
 ## 3. Configure Lawnchair
 
-For the recommended grid, red accent, icon options, and widget layout, follow the [Lawnchair setup guide](LAWNCHAIR-SETUP.md). It uses reversible launcher settings and does not require root.
+Follow the [Lawnchair setup guide](LAWNCHAIR-SETUP.md) for a suggested grid, icon settings, accent options, and widgets. Use only options visible in the installed version. Settings are reversible; do not clear app data or reset the launcher just to test a color.
+
+The original theme red is `#EC0101`. A brighter optional mobile accent is `#FF0000`, if custom hex input is supported. Entering a color does not guarantee that every launcher control changes.
 
 ## 4. Icons and widgets
 
-Icon replacement and widget colors depend on the launcher and apps installed. Use only icon packs and customization options explicitly supported by your launcher. A launcher may change the home screen without changing system apps or notification panels.
+The project does not yet include its own icon pack. Icon replacement and widget colors depend on the launcher and apps installed. Lawnchair can customize the home screen but cannot force every third-party widget or system app to use the same palette.
 
-## 5. Know the limits
+Only install icon packs from trusted sources and verify the package supports your launcher. Avoid apps that request Accessibility, device administrator, or other powerful permissions without a clear need.
 
-- This repository does not currently provide an installable APK.
-- It does not flash firmware or modify the Android system partition.
-- Quick Settings, notifications, Settings, and status-bar colors may not be customizable on the stock firmware.
-- Avoid apps that request Accessibility, device administrator, or other powerful permissions without a clear need.
+## 5. Limitations
 
-## Device details to verify
+- No installable APK or theme package is currently available.
+- This project does not flash firmware or modify the Android system partition.
+- Quick Settings, notifications, Settings, and status-bar colors may remain controlled by the device manufacturer.
+- The exact menu names depend on Lawnchair version and device firmware.
 
-This guide targets Lawnchair on the Cubot KINGKONG ACE 2. Menu names and available options can differ by Lawnchair version and device firmware.
+## Related documentation
+
+- [Lawnchair setup guide](LAWNCHAIR-SETUP.md)
+- [Asset specifications](ASSET-SPEC.md)
+- [Roadmap](ROADMAP.md)
