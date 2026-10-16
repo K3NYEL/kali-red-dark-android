@@ -10,6 +10,7 @@
   },
   "colors": {
     "primary": "#ec0101",
+    "mobileAccentBright": "#ff0000",
     "background": "#0b0b0d",
     "backgroundSecondary": "#09090b",
     "surface": "#1a1a1f",
