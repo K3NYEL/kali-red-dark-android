@@ -1,0 +1,17 @@
+# Local/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary exports and archives
+*.tmp
+*.bak
+*.zip
+*.7z
+
+# Generated preview/render files (commit only approved final assets)
+assets/previews/generated/
