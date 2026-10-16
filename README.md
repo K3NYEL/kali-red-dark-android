@@ -3,7 +3,7 @@
 A no-root Android personalization kit inspired by the **Kali Red Dark** palette from the [original VS Code theme](https://github.com/K3NYEL/kali-red-dark). This repository adapts the palette for Android launchers and customization apps; it is a separate project and does not modify the original VS Code theme.
 
 > **Target device:** Cubot KINGKONG ACE 2 running Android 14  
-> **Current status:** Documentation and manual setup guide. A complete wallpaper, icon pack, preview images, and installable theme package are not available yet.
+> **Current status:** Documentation, manual setup guide, and automated palette validation. A complete wallpaper, icon pack, preview images, and installable theme package are not available yet.
 
 ## Color palette
 
@@ -35,9 +35,20 @@ The original red remains `#EC0101`. Use `#FF0000` only if a brighter red is pref
 - [Contribution guide](CONTRIBUTING.md)
 - [Changelog](CHANGELOG.md)
 
+## Automated validation
+
+GitHub Actions runs the project validator on pushes to `main`, pull requests, and manual workflow dispatch. The validator checks that `theme/colors.json` is valid JSON, required metadata is present, every color uses six-digit hexadecimal RGB, and the project remains marked as an Android no-root personalization kit.
+
+Run the same check locally with Python 3:
+
+```bash
+python scripts/validate_theme.py
+```
+
 ## What is included today
 
 - Machine-readable color tokens in `theme/colors.json`
+- Automated validation script and GitHub Actions workflow
 - Android 14 installation notes
 - Manual Lawnchair configuration instructions
 - Documented requirements for future wallpaper, icons, and preview assets
