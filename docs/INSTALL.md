@@ -17,11 +17,15 @@ On Android 14, open **Settings → Wallpaper & style** (the exact wording can va
 
 Some manufacturers do not let users enter custom hexadecimal colors in the system palette.
 
-## 3. Icons and widgets
+## 3. Configure Lawnchair
+
+For the recommended grid, red accent, icon options, and widget layout, follow the [Lawnchair setup guide](LAWNCHAIR-SETUP.md). It uses reversible launcher settings and does not require root.
+
+## 4. Icons and widgets
 
 Icon replacement and widget colors depend on the launcher and apps installed. Use only icon packs and customization options explicitly supported by your launcher. A launcher may change the home screen without changing system apps or notification panels.
 
-## 4. Know the limits
+## 5. Know the limits
 
 - This repository does not currently provide an installable APK.
 - It does not flash firmware or modify the Android system partition.
@@ -30,4 +34,4 @@ Icon replacement and widget colors depend on the launcher and apps installed. Us
 
 ## Device details to verify
 
-Before making a device-specific package, confirm the exact launcher installed on the Cubot KINGKONG ACE 2 and which options appear under **Settings → Wallpaper & style**. Menu names can differ by firmware.
+This guide targets Lawnchair on the Cubot KINGKONG ACE 2. Menu names and available options can differ by Lawnchair version and device firmware.
