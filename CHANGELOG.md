@@ -14,8 +14,7 @@ Notable repository changes are recorded here. This project is a documentation an
 
 - Added a Python validation script for the palette and required project metadata.
 - Added a GitHub Actions workflow to run validation on pushes, pull requests, and manual dispatch.
+- Added an original vector wallpaper source and a workflow to render a 1080 × 2400 PNG artifact.
 - Added ignore rules for local/editor files and temporary exports.
-- Wallpaper artwork is still pending.
-- Custom icon pack is still pending.
-- Preview images are still pending.
+- Custom icon pack and preview images are still pending.
 - No APK or system-wide theme package is available.
