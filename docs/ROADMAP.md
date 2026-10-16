@@ -11,6 +11,8 @@ Status labels describe repository deliverables, not features already installed o
 - [x] Add Lawnchair manual setup guide
 - [x] Document target-device limitations and missing assets
 - [x] Define requirements for future assets
+- [x] Add a Python validator for palette metadata and color values
+- [x] Add a GitHub Actions workflow for pushes, pull requests, and manual runs
 - [ ] Create and test an original portrait wallpaper
 - [ ] Create home-screen preview mockups
 - [ ] Test a specific compatible icon pack on the target device
