@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="2400" viewBox="0 0 1080 2400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0B0D"/>
+      <stop offset="0.52" stop-color="#09090B"/>
+      <stop offset="1" stop-color="#101014"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#EC0101" stop-opacity=".16"/>
+      <stop offset=".48" stop-color="#EC0101" stop-opacity=".045"/>
+      <stop offset="1" stop-color="#EC0101" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF3535"/>
+      <stop offset=".5" stop-color="#FF0000"/>
+      <stop offset="1" stop-color="#A80000"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#FFFFFF" stroke-opacity=".025" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1080" height="2400" fill="url(#bg)"/>
+  <rect width="1080" height="2400" fill="url(#grid)"/>
+  <ellipse cx="540" cy="1190" rx="500" ry="570" fill="url(#halo)"/>
+  <g fill="none" stroke="#EC0101" stroke-opacity=".13" stroke-width="2">
+    <path d="M140 1030 L540 630 L940 1030"/>
+    <path d="M140 1370 L540 1770 L940 1370"/>
+    <path d="M210 1200 H870"/>
+    <path d="M540 770 V1630"/>
+  </g>
+  <g transform="translate(540 1195)" filter="url(#glow)" stroke-linejoin="round">
+    <!-- Original angular creature mark; geometric and not based on a brand logo -->
+    <path d="M-215 -245 L-80 -325 L-110 -205 L-20 -250 L75 -205 L160 -275 L145 -160 L235 -100 L155 -50 L230 15 L135 35 L160 150 L65 105 L15 220 L-40 125 L-150 180 L-125 75 L-225 45 L-150 -25 L-235 -95 L-135 -135 Z"
+          fill="#0B0B0D" stroke="url(#red)" stroke-width="15"/>
+    <path d="M-115 -180 L-35 -218 L20 -165 L-30 -100 L-105 -105 Z" fill="url(#red)"/>
+    <path d="M20 -165 L118 -205 L103 -125 L55 -80 L-30 -100 Z" fill="#0B0B0D" stroke="#FF2020" stroke-width="9"/>
+    <path d="M-95 -75 L15 -65 L95 -5 L40 35 L-55 15 Z" fill="url(#red)"/>
+    <path d="M-55 15 L40 35 L65 105 L-15 75 Z" fill="#0B0B0D" stroke="#FF2020" stroke-width="9"/>
+    <path d="M95 -5 L170 -45 L145 10 L65 35 Z" fill="url(#red)"/>
+    <path d="M-125 75 L-45 75 L-15 125 L-110 150 Z" fill="url(#red)"/>
+    <path d="M-150 -25 L-75 -15 L-115 25 L-185 18 Z" fill="#0B0B0D" stroke="#FF2020" stroke-width="8"/>
+    <path d="M145 -160 L100 -120 L150 -105 L195 -105 Z" fill="#FF0000"/>
+    <path d="M-80 -325 L-15 -255 L-110 -205 Z" fill="#FF0000"/>
+    <path d="M160 150 L65 105 L95 185 Z" fill="#FF0000"/>
+    <path d="M-215 -245 L-135 -135 L-235 -95 L-150 -25 L-225 45 L-125 75 L-150 180 L-40 125 L15 220 L65 105 L160 150 L135 35 L230 15 L155 -50 L235 -100 L145 -160 L160 -275 L75 -205 L-20 -250 L-110 -205 Z"
+          fill="none" stroke="#FF3333" stroke-opacity=".75" stroke-width="4"/>
+    <path d="M-15 -130 L42 -105 L78 -55 L27 -63 Z" fill="#E8E8E8" opacity=".95"/>
+    <path d="M-8 -112 L40 -97 L58 -77 L20 -83 Z" fill="#0B0B0D"/>
+  </g>
+  <g fill="none" stroke="#FF0000" stroke-opacity=".42" stroke-width="3">
+    <path d="M410 1780 H670"/>
+    <path d="M455 1800 H625"/>
+    <path d="M495 1820 H585"/>
+  </g>
+  <circle cx="540" cy="1195" r="390" fill="none" stroke="#FF0000" stroke-opacity=".08" stroke-width="2"/>
+  <circle cx="540" cy="1195" r="420" fill="none" stroke="#FF0000" stroke-opacity=".05" stroke-width="2" stroke-dasharray="3 18"/>
+</svg>
