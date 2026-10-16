@@ -12,6 +12,9 @@ Notable repository changes are recorded here. This project is a documentation an
 
 ## Unreleased
 
+- Added a Python validation script for the palette and required project metadata.
+- Added a GitHub Actions workflow to run validation on pushes, pull requests, and manual dispatch.
+- Added ignore rules for local/editor files and temporary exports.
 - Wallpaper artwork is still pending.
 - Custom icon pack is still pending.
 - Preview images are still pending.
