@@ -1,19 +1,17 @@
 # Asset specification
 
-This document defines the files required before Kali Red Dark for Android can be described as a complete visual kit. A listed specification is not proof that the asset already exists.
+This document defines the files required before Kali Red Dark for Android can be described as a complete visual kit. A listed specification is not proof that an asset has been tested on the target device.
 
 ## 1. Wallpaper
 
-**Design direction:** minimal, near-black background with an original vivid-red dragon-inspired emblem. The artwork must not copy an official logo or imply endorsement by Kali Linux or Offensive Security.
+**Design direction:** minimal, near-black background with an original vivid-red geometric creature emblem. The artwork must not copy an official logo or imply endorsement by Kali Linux or Offensive Security.
 
-- Primary export: portrait PNG or high-quality WebP.
-- Composition: phone wallpaper with the emblem centered; keep the top and bottom relatively quiet so the status bar, app labels, and dock remain legible.
+- Vector master: `assets/wallpapers/kali-red-dark-wallpaper-portrait.svg`.
+- Phone export: PNG rendered at 1080 × 2400 by the [Build wallpaper PNG workflow](../.github/workflows/build-wallpaper.yml).
 - Colors: background `#0B0B0D`; bright-red accent `#FF0000`; optional original-theme red `#EC0101`.
-- Resolution: provide a high-resolution master and a phone-ready export; record the actual pixel dimensions in the asset README.
-- Quality checks: inspect at normal phone brightness, confirm icon labels remain readable, check for banding/compression artifacts, and test both home and lock screens.
-- File naming: `kali-red-dark-wallpaper-portrait.png` (or a matching `.webp` extension).
-
-Do not claim that an asset is included until the image file is committed to `assets/wallpapers/`.
+- Composition: centered emblem with relatively quiet top and bottom areas for Android UI.
+- Quality checks still needed: inspect on the actual phone, check icon-label contrast at normal brightness, and test both home and lock screens.
+- PNG workflow artifacts are temporary downloads retained for 30 days; the SVG source is permanent in the repository.
 
 ## 2. Icon pack
 
@@ -33,7 +31,7 @@ No installable icon pack is currently included in this repository.
 ## 3. Preview images
 
 - Use actual committed project assets and clearly label mockups as mockups.
-- Do not present a generated or illustrative device mockup as a screenshot from the Cubot device.
+- Do not present an illustrative device mockup as a screenshot from the Cubot device.
 - Include a home-screen preview and, if available, a separate icon-detail preview.
 - Keep previews readable on mobile and compress them reasonably for GitHub.
 
@@ -52,9 +50,10 @@ For each asset, document:
 
 | Asset | Status |
 |---|---|
-| Wallpaper | Not yet included |
-| Custom icon pack | Not yet included |
-| Preview mockups | Not yet included |
+| Original vector wallpaper | Included; not yet device-tested |
+| Phone-ready PNG | Generated as a temporary GitHub Actions artifact |
+| Custom icon pack | Not included |
+| Preview mockups | Not included |
 | Color token JSON | Available at `theme/colors.json` |
 
 See the [roadmap](ROADMAP.md) for planned milestones.
