@@ -1,0 +1,27 @@
+{
+  "name": "Kali Red Dark",
+  "version": "0.1.0",
+  "source": "https://github.com/K3NYEL/kali-red-dark",
+  "target": {
+    "platform": "Android",
+    "androidVersion": "14",
+    "device": "Cubot KINGKONG ACE 2",
+    "rootRequired": false
+  },
+  "colors": {
+    "primary": "#ec0101",
+    "background": "#0b0b0d",
+    "backgroundSecondary": "#09090b",
+    "surface": "#1a1a1f",
+    "text": "#e8e8e8",
+    "textMuted": "#777777",
+    "string": "#7ee787",
+    "variable": "#79c0ff",
+    "function": "#ff9f43",
+    "class": "#ffd166",
+    "support": "#67e8f9",
+    "constant": "#c084fc",
+    "error": "#ff4d4d",
+    "border": "#29292f"
+  }
+}
