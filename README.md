@@ -3,7 +3,7 @@
 A no-root Android personalization kit inspired by the **Kali Red Dark** palette from the [original VS Code theme](https://github.com/K3NYEL/kali-red-dark). This repository adapts the palette for Android launchers and customization apps; it is a separate project and does not modify the original VS Code theme.
 
 > **Target device:** Cubot KINGKONG ACE 2 running Android 14  
-> **Current status:** Documentation, manual setup guide, and automated palette validation. A complete wallpaper, icon pack, preview images, and installable theme package are not available yet.
+> **Current status:** Documentation, manual setup guide, automated validation, and original vector wallpaper source. The icon pack, previews, and installable theme package are not available yet.
 
 ## Color palette
 
@@ -35,6 +35,10 @@ The original red remains `#EC0101`. Use `#FF0000` only if a brighter red is pref
 - [Contribution guide](CONTRIBUTING.md)
 - [Changelog](CHANGELOG.md)
 
+## Wallpaper
+
+The original vector wallpaper source is available at [`assets/wallpapers/kali-red-dark-wallpaper-portrait.svg`](assets/wallpapers/kali-red-dark-wallpaper-portrait.svg). GitHub Actions can render a 1080 × 2400 PNG and publish it as a temporary downloadable artifact. Follow [the wallpaper instructions](assets/wallpapers/README.md) to retrieve it.
+
 ## Automated validation
 
 GitHub Actions runs the project validator on pushes to `main`, pull requests, and manual workflow dispatch. The validator checks that `theme/colors.json` is valid JSON, required metadata is present, every color uses six-digit hexadecimal RGB, and the project remains marked as an Android no-root personalization kit.
@@ -48,15 +52,13 @@ python scripts/validate_theme.py
 ## What is included today
 
 - Machine-readable color tokens in `theme/colors.json`
-- Automated validation script and GitHub Actions workflow
-- Android 14 installation notes
-- Manual Lawnchair configuration instructions
-- Documented requirements for future wallpaper, icons, and preview assets
+- Original vector wallpaper source plus a workflow to render a phone-ready PNG
+- Automated validation script and GitHub Actions workflows
+- Android 14 installation notes and manual Lawnchair configuration instructions
 
 ## What is not included yet
 
-- A finished Kali Red Dark wallpaper
-- A complete icon pack
+- A custom icon pack
 - Preview/mockup images
 - An installable APK, launcher theme package, or system-wide theme
 
@@ -64,7 +66,7 @@ Do not treat this repository as a ROM, firmware image, or Kali NetHunter install
 
 ## Device compatibility
 
-The documentation targets Lawnchair on a Cubot KINGKONG ACE 2 running Android 14, but exact menus and supported options depend on the installed Lawnchair version and device firmware. Steps that have not been verified on the exact device are identified as recommendations rather than guaranteed behavior.
+The documentation targets Lawnchair on a Cubot KINGKONG ACE 2 running Android 14, but exact menus and supported options depend on the installed Lawnchair version and device firmware. The wallpaper has not yet been tested on the target device.
 
 ## License
 
