@@ -13,16 +13,19 @@ Status labels describe repository deliverables, not features already installed o
 - [x] Define requirements for future assets
 - [x] Add a Python validator for palette metadata and color values
 - [x] Add a GitHub Actions workflow for pushes, pull requests, and manual runs
-- [ ] Create and test an original portrait wallpaper
+- [x] Add an original portrait SVG wallpaper source
+- [x] Add a GitHub Actions workflow to render a 1080 × 2400 PNG artifact
+- [ ] Confirm the wallpaper workflow succeeds on GitHub
+- [ ] Test the wallpaper on the target phone
 - [ ] Create home-screen preview mockups
 - [ ] Test a specific compatible icon pack on the target device
 
 ## v0.2.0 — Visual assets
 
-- [ ] Add final home-screen wallpaper with a near-black background and original bright-red emblem
-- [ ] Include a high-resolution source file and a phone-ready export
+- [x] Add an original geometric wallpaper master
+- [x] Provide a workflow for a phone-ready PNG export
 - [ ] Add before/after preview images with no fake device screenshots
-- [ ] Record image dimensions, format, and license/source for every asset
+- [ ] Record final asset validation and phone test results
 
 ## v0.3.0 — Icon options
 
@@ -39,4 +42,4 @@ Status labels describe repository deliverables, not features already installed o
 
 ## Release criteria
 
-Do not label the project as a complete theme or publish an APK until an installable artifact exists and its installation has been tested. A color JSON file and manual setup instructions do not constitute an installable theme.
+Do not label the project as a complete theme or publish an APK until an installable artifact exists and its installation has been tested. A color JSON file, wallpaper, and manual setup instructions do not constitute an installable theme.
